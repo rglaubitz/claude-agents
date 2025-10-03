@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-10-01",
+  "description": "Claude Agents Library - 29 specialized agents",
+  "totalAgents": 29,
+  "categories": {
+    "orchestration": 4,
+    "development": 6,
+    "quality": 4,
+    "review": 4,
+    "support": 7,
+    "research": 4
+  },
+  "compatibleWith": {
+    "claudeCode": ">=1.0.0",
+    "constitution": ">=1.0.0"
+  }
+}
