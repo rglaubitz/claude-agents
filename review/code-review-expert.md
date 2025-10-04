@@ -1,7 +1,7 @@
 ---
 name: code-review-expert
 description: "Parallel code review specialist with deep analysis capabilities"
-tools: Task, Read, Grep, Glob, Bash, Write, Edit
+tools: Task, Read, Grep, Glob, Write, Edit
 model: claude-sonnet-4
 parallel: true
 ---
