@@ -12,13 +12,13 @@ A versioned collection of 42 specialist agents for Claude Code projects.
 
 | Category | Count | Purpose |
 |----------|-------|---------|
-| **Orchestration** | 4 | Planning & coordination |
+| **Orchestration** | 9 | Planning & execution coordination ⭐ |
 | **Development** | 6 | Core implementation |
 | **Quality** | 4 | Testing & compliance |
-| **Research** | 17 | Research & documentation ⭐ |
+| **Research** | 17 | Research & documentation |
 | **Review** | 4 | Code review & validation |
 | **Support** | 7 | Specialized tools |
-| **Total** | **42** | Complete workforce library |
+| **Total** | **47** | Complete workforce library |
 
 ## How This Works
 
@@ -53,12 +53,21 @@ curl -o ~/.claude/agents/task-manager.md \
 
 ## Agent Categories
 
-### Orchestration (4 agents)
-Strategic planning and coordination
-- **task-manager** - Director of execution, workflow orchestration
+### Orchestration (9 agents) ⭐ EXPANDED
+Strategic planning and tactical execution
+
+**Planning Team (4 agents):**
+- **task-manager** - Strategic planning coordinator (Phase 3)
 - **project-task-planner** - Task breakdown, dependency mapping
 - **prd-expert** - PRD creation, requirements specification
 - **agent-architecture-designer** - Multi-agent system design
+
+**Execution Team (5 agents):**
+- **execution-director** - Field commander for Phase 4 tactical orchestration
+- **delivery-coordinator** - Handoff manager, team synchronization
+- **quality-enforcer** - Gate keeper with blocking authority
+- **blocker-resolver** - 5-level escalation problem solver
+- **progress-tracker** - War room dashboard and metrics
 
 ### Development (6 agents)
 Core implementation specialists
