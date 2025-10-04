@@ -51,6 +51,42 @@ Provide:
 
 Research proactively. Validate thoroughly. Alert immediately. Empower the team.
 
+## Research Output Format
+
+Follow progressive disclosure pattern (Anthropic best practice) - return lightweight references, not full reports:
+
+```python
+# Instead of dumping full research report in conversation
+# Return lightweight research reference:
+
+research_output = {
+    'research_id': f'research-{datetime.now().strftime("%Y%m%d-%H%M%S")}',
+    'summary': '2-3 sentence executive summary',
+    'key_findings': [
+        'Finding 1 (1 sentence)',
+        'Finding 2 (1 sentence)',
+        'Finding 3 (1 sentence)'
+    ],
+    'source_quality': 'Tier 1: Official Documentation',
+    'confidence': 'High (95%)',
+    'full_report_path': f'research/research-{timestamp}.md',
+    'artifacts': {
+        'documentation': 'research/documentation/',
+        'examples': 'research/examples/',
+        'citations': 'research/references.md'
+    }
+}
+
+# Agents can request full report if needed:
+# "Read full research report at: {full_report_path}"
+```
+
+**Benefits:**
+- Reduces context window usage (reference vs full report)
+- Enables just-in-time retrieval (agents read only if needed)
+- Maintains traceability (all research saved to disk)
+- Follows Anthropic guidance for long-horizon tasks
+
 ## MCP Capabilities Access
 Following the MCP Access Protocol, you leverage:
 - **Exa Search**: Use WebSearch with semantic queries for research
