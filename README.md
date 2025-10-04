@@ -1,6 +1,35 @@
 # Claude Agents Library
 
-A versioned collection of 29 specialized agents for Claude Code projects.
+A versioned collection of 42 specialist agents for Claude Code projects.
+
+> **The Workforce Library** - Import only the agents you need for your project.
+>
+> **Looking for the workflow system?** See [claude-workflow-starter](https://github.com/rglaubitz/claude-workflow-starter)
+>
+> **Architecture details:** See [ARCHITECTURE.md](./ARCHITECTURE.md)
+
+## Agent Summary
+
+| Category | Count | Purpose |
+|----------|-------|---------|
+| **Orchestration** | 4 | Planning & coordination |
+| **Development** | 6 | Core implementation |
+| **Quality** | 4 | Testing & compliance |
+| **Research** | 17 | Research & documentation ⭐ |
+| **Review** | 4 | Code review & validation |
+| **Support** | 7 | Specialized tools |
+| **Total** | **42** | Complete workforce library |
+
+## How This Works
+
+This library provides specialist agents that you "hire" during **Phase 3: Execution Planning** of the [claude-workflow-starter](https://github.com/rglaubitz/claude-workflow-starter) workflow.
+
+**You don't need all 42 agents** - only import the ones your project needs.
+
+**Example:** A web app might only need:
+- task-manager, project-task-planner (orchestration)
+- backend-developer, frontend-developer, database-architect (development)
+- qa-engineer, code-review-expert (quality)
 
 ## Installation
 
@@ -64,12 +93,29 @@ Specialized technical support
 - **integration-specialist** - API/service integration
 - **mcp-bridge-engineer** - MCP server integration
 
-### Research (4 agents)
-Documentation and analysis
-- **research-manager** - Technical research, documentation gathering
+### Research (17 agents) ⭐ EXPANDED
+Research, documentation, and knowledge gathering
+
+**Core Research Team (4 agents):**
+- **research-manager** - Research orchestration, quality validation
 - **documentation-expert** - Technical writing, documentation structure
 - **agent-testing-engineer** - Agent behavior validation
 - **memory-system-engineer** - Knowledge persistence, data storage
+
+**Research Specialists (13 agents):**
+- **deep-researcher** - In-depth technical investigation
+- **research-coordinator** - Multi-source research coordination
+- **technical-validator** - Validates technical accuracy
+- **standards-researcher** - Framework standards, best practices
+- **company-researcher** - Organization and product research
+- **competitive-intelligence-analyst** - Market and competitor analysis
+- **technical-trend-analyst** - Technology trend forecasting
+- **documentation-hunter** - Finds official docs and guides
+- **github-examples-hunter** - Discovers quality code examples
+- **pattern-implementation-analyst** - Analyzes implementation patterns
+- **api-documentation-specialist** - API reference expertise
+- **citation-manager** - Source validation and citation
+- **code-quality-validator** - Validates code quality standards
 
 ## Version Compatibility
 
